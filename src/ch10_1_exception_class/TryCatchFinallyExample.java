@@ -1,10 +1,13 @@
 package ch10_1_exception_class;
 
+
 public class TryCatchFinallyExample {
 	public static void main(String[] args) {
-		
-		Class clazz = Class.forName("java.lang.sTring");
-		
-		
+		try {
+			Class clazz = Class.forName("String2");
+		} catch(ClassNotFoundException e) {
+			System.out.println("클래스가 존재하지 않습니다.");
+		}
 	}
 }
+
